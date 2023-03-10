@@ -1,0 +1,19 @@
+<div class="centerer">
+    <mat-card>
+      <mat-card-title>Connexion</mat-card-title>
+      <mat-card-content>
+        <div class="centerer">
+          <!-- <div class="user-infos" *ngIf="showLogoutButton">
+            <span>{{ (user | async)?.displayName }}</span>
+            <img src="{{ (user | async)?.photoURL }}" alt="">
+          </div> -->
+          
+          <button mat-raised-button color="primary" (click)="login()" *ngIf="showLoginButton">Log in with Google</button>
+          <button mat-raised-button color="primary" (click)="loginAnonymously()" *ngIf="showLoginButton">Log in anonymously</button>
+          <mat-spinner *ngIf="showProgressSpinner"></mat-spinner>
+          <button mat-raised-button color="warn" (click)="logout()" *ngIf="showLogoutButton">Log out</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+</div>
+  

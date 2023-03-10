@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myhoot-d090b": {
+      "hosting": {
+        "Miahoot": [
+          "myhoot-d090b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myhoot-d090b"
+  }
+}
